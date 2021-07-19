@@ -1,0 +1,26 @@
+list = []
+
+
+def tom():
+    command = input()
+
+    if 'insert' in command:
+        list.insert(int(input("Position: ")), int(input('Give the number: ')))
+    elif 'remove' in command:
+        list.remove(int(input('Give the number: ')))
+    elif 'append' in command:
+        list.append(int(input('Give the number: ')))
+    elif 'pop' in command:
+        list.pop()
+    elif 'reverse' in command:
+        list.reverse()
+    elif 'sort' in command:
+        list.sort()
+    elif 'print' in command:
+        print(list)
+
+    print(list)
+
+
+while True:
+    tom()
